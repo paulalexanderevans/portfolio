@@ -1,0 +1,589 @@
+[
+    {
+        "code": [
+            {
+                "category": "code",
+                "id": "[0].code[0]",
+                "title": "MITTENDRIN UNSICHTBAR",
+                "subtitle": "digital book",
+                "role": "ux design, programming",
+                "tech": "react, node.js, CSS+, VSC",
+                "description": "Book with the aim of making homeless women in Berlin more visible through collaborating with them to document their daily lives with analog cameras. Responsive 2 page web-App consisting of a landing page and main page. All hand coded. Concept, design and project logistics: Ronja Lang.",
+                "links": [
+                    {
+                        "txt": "visit website",
+                        "target": "https://www.mittendrin-unsichtbar.de/"
+                    },
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/mittendrinunsichtbar"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/uEkLtXoikNRFu8g21DqkQityc-ZvrABy.gif",
+                        "alt": "mittendrin unsichtbar preview"
+                    }
+                ]
+            },
+            {
+                "category": "code",
+                "id": "[0].code[1]",
+                "title": "CYCLING KIT",
+                "subtitle": "web app",
+                "role": "concept, design, photography, programming",
+                "tech": "react, node.js, SQL, API requests, CSS+, VSC",
+                "description": "SPA which makes intensity specific cycle clothing recommendations based on the weather conditions in the users chosen area.",
+                "links": [
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/cyclingKit"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/EIH-z-U3ZHU5xv5biFzaUtAJtRJ1Rit0.gif",
+                        "alt": "a gif preview of cycling kit"
+                    }
+                ]
+            },
+            {
+                "category": "code",
+                "id": "[0].code[2]",
+                "title": "RAD-FAR",
+                "subtitle": "image sharing",
+                "role": "concept, design, photography, programming",
+                "tech": "VUE, node.js, SQL, AWS, CSS+, VSC",
+                "description": "SPA which allows the user to view, add to and comment on images posted to the board.",
+                "links": [
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/rad-far"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/nwZ28jyQZGBGkULApYZTQveNTf82AYR-.gif",
+                        "alt": "a gif preview of rad-far imageboard"
+                    }
+                ]
+            },
+            {
+                "category": "code",
+                "id": "[0].code[3]",
+                "title": "NETZUNG",
+                "subtitle": "social network",
+                "role": "design, programming",
+                "tech": "react, node.js, SQL, AWS, cookies, CSS+, VSC",
+                "description": "Complete social network platform allowing users to create secure accounts, share photos, befriend and chat with other users.",
+                "message": "",
+                "links": [
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/netzung"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/1lj1tgB2qX8iLbLRUuviU7RdRxf7DR7P.gif",
+                        "alt": "a gif preview of netzung - social network"
+                    }
+                ]
+            },
+            {
+                "category": "code",
+                "id": "[0].code[4]",
+                "title": "CYCLE LANES",
+                "subtitle": "online petition",
+                "role": "programming",
+                "tech": "handlebars, node.js, SQL, canvas, cookies, CSS+, VSC",
+                "description": "Website allowing users to create an account and add hand-drawn signatures to a petition lobbying for maintaining Berlin's cycle ways",
+                "links": [
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/cycleLanesPetition"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/-EXAVQyeRVMnN2MUFrYK6FWrQoYe2aT8.jpg",
+                        "alt": "a gif preview of maintain berlin cycle lanes petition"
+                    }
+                ]
+            },
+            {
+                "category": "code",
+                "id": "[0].code[5]",
+                "title": "SPICIFY",
+                "subtitle": "search engine",
+                "role": "design, programming",
+                "tech": "API request, CSS+, Handlebars, VSC, Adobe Photoshop",
+                "description": "Search engine allowing users to search Spotify's library by artist or album and provides related imagery and a link to the album/artist profile.",
+                "links": [
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/spicify"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/PKZRPNS3DmO2R3L1K1OozjQTZ30Ge-K7.gif",
+                        "alt": "a gif preview of Spicify"
+                    }
+                ]
+            },
+            {
+                "category": "code",
+                "id": "[0].code[6]",
+                "title": "VIER GEWINNT",
+                "subtitle": "game",
+                "role": "design, programming",
+                "tech": "javascript, HTML, CSS, Adobe Photoshop, VSC",
+                "description": "2 player connect four game using javascript to control the DOM. Styled after the original game packaging from the 1950's.",
+                "links": [
+                    {
+                        "txt": "github",
+                        "target": "https://github.com/paulalexanderevans/vierGewinnt"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/bHKNQ_TCUMCOuuL_5oRWdbu2rwu0bdMD.gif",
+                        "alt": "a gif preview of 4gewinnt - connect 4 game"
+                    }
+                ]
+            }
+        ],
+        "digital": [
+            {
+                "category": "digital",
+                "id": "[0].digital[0]",
+                "title": "4SEVEN",
+                "subtitle": "ident",
+                "role": "3d, animation, sound design, edit",
+                "tech": "Adobe Illustrator, Cinema4D, Ableton Live, Final Cut Pro",
+                "description": "Sound reactive motion graphics Ident that represents channel4's innovative new channel 4seven.",
+                "links": [],
+                "media": [
+                    {
+                        "type": "video",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/47identfin.mp4",
+                        "alt": "4seven ident"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[1]",
+                "title": "FRACTAL FORMS - COIL",
+                "subtitle": "animation",
+                "role": "3d, animation, sound design, edit",
+                "tech": "Cinema4D, Ableton Live, Final Cut Pro",
+                "description": "Animation of an object made up of smaller versions of itself, set to music.",
+                "links": [],
+                "media": [
+                    {
+                        "type": "video",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/coil.mov",
+                        "alt": "coil - a 3d animation project"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[2]",
+                "title": "DANCER",
+                "subtitle": "animation",
+                "role": "3d, animation",
+                "tech": "Cinema4D, Adobe Photoshop",
+                "description": "Atomic particle simulation.",
+                "links": [],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/q_NqOz5XwtGrsofQMG8pNC9iyBGXVH86.gif",
+                        "alt": "dancer - a 3d animation project"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[3]",
+                "title": "FRACTAL FORMS - CUBE",
+                "subtitle": "animation",
+                "role": " 3d, camera, lighting",
+                "tech": "Cinema4D, Adobe Photoshop",
+                "description": "Still frames from deconstructing a cube made up of smaller versions of itself",
+                "links": [],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/nxVX2mdVp1EMJAYKDjiObbBD6EPd9Ga7.jpg",
+                        "alt": "a still from from Cube"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/xc2GdVqIcFkUKr2j0ubJ74ez1osGuLEP.jpg",
+                        "alt": "a still from from Cube"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[4]",
+                "title": "TOPO",
+                "subtitle": "digital art",
+                "role": "photography, 3d, camera, lighting",
+                "tech": "Cinema4D, Adobe Illustrator Adobe Photoshop",
+                "description": "surreal digital topographies rendered in a real world atmosphere",
+                "links": [],
+                "message": "click left/right for more",
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/1.jpg",
+                        "alt": "a render from Topo series"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/2.jpg",
+                        "alt": "a render from Topo series"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/3.png",
+                        "alt": "a render from Topo series"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/4.png",
+                        "alt": "a render from Topo series"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[5]",
+                "title": "FABRICLIVE",
+                "subtitle": "trailer",
+                "role": "animation, edit",
+                "tech": "Adobe Illustrator, Cinema4D, Final Cut Pro",
+                "description": "Sound reactive trailer for Fabric London's upcoming winter season.",
+                "message": "",
+                "links": [],
+                "media": [
+                    {
+                        "type": "video",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/fl.mp4",
+                        "alt": "4seven ident"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[6]",
+                "title": "FRACTAL FORMS - SPHERE",
+                "subtitle": "digital art",
+                "role": "sound, animation, edit",
+                "tech": "Ableton Live, Cinema4D, Final Cut Pro",
+                "description": "Sound reactive animation of a sphere made up of smaller versions of itself",
+                "links": [],
+                "media": [
+                    {
+                        "type": "video",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/spherefin.mp4",
+                        "alt": "sphere animation"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[7]",
+                "title": "EVERGREEN CYCLES",
+                "subtitle": "computer aided design",
+                "role": "design, rendering",
+                "tech": "bikeCAD, Cinema4D, Adobe Photoshop",
+                "description": "Digital design, prototyping and mock-up rendering",
+                "links": [],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/IRVYNrqtY3EbLij6uA6riOq5uiz7qF8C.jpg",
+                        "alt": "cad render of bicycle frame"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[8]",
+                "title": "SUFFERFACE",
+                "subtitle": "illustrations",
+                "role": "solo project",
+                "tech": "hand-drawing, Adobe Photoshop",
+                "description": "Illustrations of professional cyclists' pain faces.",
+                "links": [],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/rafalMajka.jpg",
+                        "alt": "illustration of rafal majka"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/kittel.jpg",
+                        "alt": "illustration of kittel"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/_e4iTtcODvWqEvz50oFFAc9DxtCDUfBc.jpg",
+                        "alt": "illustration of cadel"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/chris+froome.jpg",
+                        "alt": "illustration of chris froome"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/tnn.jpg",
+                        "alt": "illustration of Team Norvo Nordisk"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[9]",
+                "title": "CSAR CO",
+                "subtitle": "cycling kit design",
+                "role": "design",
+                "tech": "hand-drawing, Adobe Photoshop, Adobe Illustrator",
+                "description": " Pattern development inspired by British military camouflage and printmaking and utilised for cycling kits.",
+                "links": [],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/F0vGpwIunbnnKvW6phZgvJ6QWNh7kkKg.png",
+                        "alt": "British military camo halftone pattern"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/95MWWsGFRskxcTmkurQJ1Lgm4UoWsP5C.jpg",
+                        "alt": "black csar cycling kit"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/f2anb2k-c4HtKai8_3kZGMwjQ5KiYmGV.jpg",
+                        "alt": "orange csar cycling kit"
+                    }
+                ]
+            },
+            {
+                "category": "digital",
+                "id": "[0].digital[10]",
+                "title": "EVERGREEN CYCLES",
+                "subtitle": "visual identity",
+                "role": "design",
+                "tech": "hand-drawing, Adobe Photoshop, Adobe Illustrator",
+                "description": "Logo design and visual identity for Evergreen Cycles",
+                "links": [],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/IVnk7bCNj1EPKKcOI2E2Jstj7NRJVAYf.gif",
+                        "alt": "handdrawn evergreen cycles badges"
+                    }
+                ]
+            }
+        ],
+        "physical": [
+            {
+                "category": "physical",
+                "id": "[0].physical[0]",
+                "title": "FERN - CIAO",
+                "subtitle": "road bike",
+                "role": "fitting, geometry, paint design, construction",
+                "tech": "rattleCAD, Adobe Photoshop, Adobe Illustrator",
+                "description": "Hand made road bike with paint scheme inspired by customers favorite jersey",
+                "links": [
+                    {
+                        "txt": "more info ↗",
+                        "target": "https://www.fern-fahrraeder.de/arbeiten/ciao-road-racebike"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/4ec17b8f915fc5a491086079bbade00a9200327276647f5ce6b3d37d660fd0f36714f9cba13e64093fd0ee26f6b6c096b2cec9ac803efc6a51452ee5d1862bab?size=lg",
+                        "alt": "Ciao road bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/1b0812a0a0451beaf713a447e7d28becc4aa879c25eb7115dc079922e831f478fd5fb41f87787e349fcf4a90144c59cdfaea8255aecd4f89b3807e58d792b95c?size=lg",
+                        "alt": "Ciao road bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/752f02fef9f94e3302de33996d3fb5eed38bb28f6f3f9031e81111fd824e1865ae966185311299757970274e64a6e8b22441a1851e36c7d1e9a6691b98eff8b8?size=lg",
+                        "alt": "Ciao road bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/516eb7d80370fc2b53b325a6f1a26e765f07cfb16717f4700ac78fddd7512878f39a1f6f3a29a78bf3593fc4b2695fede7c184c33be431c77fa5c0bfe8a73758?size=lg",
+                        "alt": "Ciao road bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/geo4.jpg",
+                        "alt": "Ciao road bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/alexpaint.jpg",
+                        "alt": "Ciao road bike"
+                    }
+                ],
+                "counter": 0
+            },
+            {
+                "category": "physical",
+                "id": "[0].physical[1]",
+                "title": "FERN - PORTEUR DELUXE",
+                "subtitle": "handlebar/stem",
+                "role": "construction, finishing",
+                "tech": "hand craft",
+                "description": "One piece bar and stem inspired by French delivery bikes of the 1940's. Custom handmade, polished and nickel coated",
+                "message": "click left/right for more",
+                "links": [
+                    {
+                        "txt": "more info ↗",
+                        "target": "https://www.fern-fahrraeder.de/arbeiten/porteur-deluxe-classy-transportation"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/affa01c1a328ef52016eded39c9b7a7192bdbf87a80e5cd3baf4ca55685b64c5dce0959cde13b1defc86aea8d2b4684218fe77b8f89b567af974b2351cd33ddb?size=lg",
+                        "alt": "porteur deluxe handlebar"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/e088a985bc604a85953fa281c578c8b918877ff40deab50843d5a78d61d489256f3effd550609a35a6438b3efa85c396c1168dc1112b4dbcdd26c1981e6c1f88?size=lg",
+                        "alt": "porteur deluxe handlebar"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/121fd14293aea514b74936d5086d8f957d90127cfe731e544b338378052b0a458e88a54344e6dc8265350a91f5c8e7e9009dc6e3c665683a4c89f124c1dbedff?size=lg",
+                        "alt": "porteur deluxe handlebar"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/bbdbc3ba6f7b806fbdbdf014da6ef55ad3e1c4beaeba91827cb7bab97a487cb293476b3782b07a84b263cedda24ca19c752e0052d5d4d2d75cac3bb4204fde42?size=lg",
+                        "alt": "porteur deluxe handlebar"
+                    }
+                ]
+            },
+            {
+                "category": "physical",
+                "id": "[0].physical[2]",
+                "title": "FERN - CHUCK",
+                "subtitle": "gravel bike",
+                "role": "geometry, paint design, construction",
+                "tech": "rattleCAD, Adobe Photoshop, Adobe Illustrator",
+                "description": "Hand made gravel bike with paint scheme inspired by customers favorite mountain bike from his childhood.",
+                "links": [
+                    {
+                        "txt": "more info ↗",
+                        "target": "https://www.fern-fahrraeder.de/arbeiten/chuck-650b-disc-funmachine"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/ca3fea43b7bd3973a95766fae8ab03c98b3dfab068df215e0f8d0a326d9aa2ba430831b8f9c4b343f23fc2f09a79c03763a871547753b7f70d1e337dc70635be?size=lg",
+                        "alt": "chuck gravel bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/23c789a043c86f49725c4bef7f278c76c7e6a6ae56f3ab75a2f137c3100505b0ef1e5ee3859cb844025db22fe0861eef1b070c98e6d053cf2c1c3d83c9261008?size=lg",
+                        "alt": "chuck gravel bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/68dfc47aeba85bdf95607dc38307352adf01e000f44878f1af3e21a91bab90834a91852a56885448a2c6c5b9a66f85d400819c63ec3e15bd55713fdde2a8762c?size=lg",
+                        "alt": "chuck gravel bike"
+                    },
+
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/5961c78cc97f38679680c97496e82ca3aa1b7f4fc146179638eff8dd8e841267d18607f1bffe522000d85eeccfa3c2d7b3a368fa2d68420b067d8ddf8b5505ec?size=lg",
+                        "alt": "chuck gravel bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://www.fern-fahrraeder.de/story_images/9cf04b11f97631744941d9cf2f25fa9c9ca3f9942fb30033a2659c7cc66aef9e415fc5c4a0cf1bea3e4c4f265f065753dc84074849c4b4186b9e83d30f97f492?size=lg",
+                        "alt": "chuck gravel bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/geo1.jpg",
+                        "alt": "chuck gravel bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/paint1.jpg/paint1.jpg",
+                        "alt": "chuck gravel bike"
+                    }
+                ]
+            },
+            {
+                "category": "physical",
+                "id": "[0].physical[3]",
+                "title": "FERN - FTF",
+                "subtitle": "gravel bike",
+                "role": "geometry, construction",
+                "tech": "rattleCAD, hand craft",
+                "description": "Hand made gravel bike designed specifically for off road riding in Brandenburg.",
+                "links": [
+                    {
+                        "txt": "more info ↗",
+                        "target": "https://www.fern-fahrraeder.de/arbeiten/fixedmaster-fat-fixed-offroad"
+                    }
+                ],
+                "media": [
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/ftfgeo4.jpg",
+                        "alt": "FTF bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/ftfgeo2.jpg",
+                        "alt": "FTF bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/ftf1.jpg",
+                        "alt": "FTF bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/ftf2.jpg",
+                        "alt": "FTF bike"
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://s3.eu-central-1.amazonaws.com/paulevans.de.media/ftf3.jpg",
+                        "alt": "FTF bike"
+                    }
+                ]
+            }
+        ]
+    }
+]

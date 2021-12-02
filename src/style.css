@@ -216,24 +216,17 @@ p {
     width: 100%;
 }
 
-.welcomeTxt {
-    padding: 0.5em;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
-}
-
 .welcomeTxtTest {
     position: absolute;
     font-family: "trade-gothic-bold";
     font-size: 5em;
     width: 100vw;
     line-height: 1em;
-    top: 1em;
+    top: 50%;
     left: 0.04em;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 }
 
 .down {

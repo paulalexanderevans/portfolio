@@ -27,7 +27,7 @@ a:visited {
 }
 
 html {
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.5em + 0.8vw);
 }
 
 @font-face {
@@ -299,17 +299,26 @@ p {
     left: 0;
     top: 0;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left {
-    width: 50%;
-    height: 100%;
+    font-family: "trade-gothic-bold";
+    font-size: 5em;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    color: white;
 }
 
 .right {
-    width: 50%;
-    height: 100%;
+    font-family: "trade-gothic-bold";
+    font-size: 5em;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: white;
 }
 
 .text {
@@ -439,44 +448,9 @@ p {
     justify-content: center;
 }
 
-.contactDetails {
-    /* position: absolute; */
-    left: 34%;
-    width: 66%;
-    height: auto;
-    padding: 0.05em;
-    font-family: "trade-gothic-bold";
-    font-size: 5em;
-    line-height: 0.8em;
-    word-break: break-all;
-}
-
 .footer {
     width: 100%;
     padding: 0.5em;
     display: flex;
     justify-content: space-around;
-}
-
-/* ---cursor--- */
-.cursor {
-    border-radius: 50%;
-    position: absolute;
-    z-index: 200;
-    opacity: 100%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-.cursorRound {
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    position: absolute;
-    background-color: black;
-    z-index: 200;
-    opacity: 100%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    display: none;
 }

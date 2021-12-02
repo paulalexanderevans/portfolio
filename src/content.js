@@ -43,20 +43,17 @@ export default function Welcome() {
     };
     const linkHover = (e) => {
         var RC = randomColour();
-        const menuButton = document.querySelector(".menuButton");
-        const menuBurger1 = document.querySelector(".menuBurger1");
-        const menuBurger2 = document.querySelector(".menuBurger2");
-        if (e.target === menuButton) {
-            menuBurger1.style.background = RC;
-            menuBurger2.style.background = RC;
-        } else {
-            e.target.style.color = RC;
-        }
+        e.target.style.color = RC;
     };
 
     const linkLeave = (e) => {
+        console.log(e.target.className);
         if (menuOpen && e.target.id === "work") {
             console.log("work");
+        } else if (e.target.className === "left") {
+            e.target.style.color = "white";
+        } else if (e.target.className === "right") {
+            e.target.style.color = "white";
         } else {
             e.target.style.color = "black";
         }
@@ -67,8 +64,6 @@ export default function Welcome() {
     const menuTxt = () => {
         const welcomeTxtDiv = document.querySelector(".welcomeTxtTest");
         const workMenu = document.querySelector(".workMenu");
-        console.log("moving", workMenu, "on-screen");
-        console.log("moving", welcomeTxtDiv, "off-screen");
         welcomeTxtDiv.style.left = "-100%";
         workMenu.style.left = "0.04em";
         const work = document.querySelector("#work");
@@ -181,77 +176,72 @@ export default function Welcome() {
         }
         setTimeout(changeColor, 500);
     };
-    // ---gallery cursor---
 
-    const rightHoverEnter = (e) => {
-        e.target.style.cursor =
-            'url("https://s3.eu-central-1.amazonaws.com/paulevans.de.media/9BH1H86YcXWWkOfxiGq4XSRrMVmh5bd7.png") 32 32, auto';
-    };
-
-    const leftHoverEnter = (e) => {
-        e.target.style.cursor =
-            'url("https://s3.eu-central-1.amazonaws.com/paulevans.de.media/iTlGjIQ7Dc2VZv1LkkQ-iMVwrfXAdpb8.png") 32 32, auto';
-    };
-
-    async function clickLeft(e) {
+    let clickLeft = async function (e) {
         var thisProject = eval("content" + e.nativeEvent.path[1].id);
-        console.log("thisProject: ", thisProject);
-        setCounter(
-            e.nativeEvent.path[3].children[0].children[1].children[1].children[0].innerHTML.charAt(
-                0
-            ) - 1
-        );
-
-        console.log("counter: ", counter);
-        if (counter > 0) {
-            await setCounter(counter - 1);
-        } else {
-            console.log("first photo");
-            await setCounter(thisProject.media.length - 1);
-        }
-
-        console.log("counter2: ", counter);
+        var thisPhoto = e.nativeEvent.path[3].children[1].children[1];
         var thisCounterDiv =
             e.nativeEvent.path[3].children[0].children[1].children[1];
-        console.log("thisCounterDiv ", thisCounterDiv);
-        thisCounterDiv.innerHTML = `<h4>
-                ${counter + 1}&nbsp;|&nbsp;${thisProject.media.length}
-            </h4>`;
-
-        var thisPhoto = e.nativeEvent.path[3].children[1].children[1];
-        console.log("thisPhoto: ", thisPhoto);
-        thisPhoto.src = thisProject.media[counter].src;
-    }
-
-    const clickRight = (e) => {
-        console.log("someone clicked right");
-        var thisProject = eval("content" + e.nativeEvent.path[1].id);
-        console.log("thisProject: ", thisProject);
-        setCounter(
-            e.nativeEvent.path[3].children[0].children[1].children[1].children[0].innerHTML.charAt(
-                0
-            ) - 1
-        );
-
-        console.log("counter: ", counter);
-        if (counter === thisProject.media.length - 1) {
-            console.log("last photo");
-            setCounter(0);
-        } else {
-            setCounter(counter + 1);
+        async function setThisCounter() {
+            setCounter(
+                e.nativeEvent.path[3].children[0].children[1].children[1].children[0].innerHTML.charAt(
+                    0
+                ) - 1
+            );
+            return counter;
         }
+        async function changeCounter() {
+            if (counter === 0) {
+                setCounter(thisProject.media.length - 1);
+                return thisProject.media.length - 1;
+            } else {
+                setCounter(counter - 1);
+                return counter - 1;
+            }
+        }
+        doStuff();
+        async function doStuff() {
+            const wait = await setThisCounter();
+            const newCounter = await changeCounter();
+            thisCounterDiv.innerHTML = `<h4>
+                ${newCounter + 1}&nbsp;|&nbsp;${thisProject.media.length}
+            </h4>`;
+            thisPhoto.src = thisProject.media[newCounter].src;
+        }
+    };
 
-        console.log("counter2: ", counter);
+    let clickRight = async function (e) {
+        var thisProject = eval("content" + e.nativeEvent.path[1].id);
+        var thisPhoto = e.nativeEvent.path[3].children[1].children[1];
         var thisCounterDiv =
             e.nativeEvent.path[3].children[0].children[1].children[1];
-        console.log("thisCounterDiv ", thisCounterDiv);
-        thisCounterDiv.innerHTML = `<h4>
-                ${counter + 1}&nbsp;|&nbsp;${thisProject.media.length}
-            </h4>`;
 
-        var thisPhoto = e.nativeEvent.path[3].children[1].children[1];
-        console.log("thisPhoto: ", thisPhoto);
-        thisPhoto.src = thisProject.media[counter].src;
+        async function setThisCounter() {
+            setCounter(
+                e.nativeEvent.path[3].children[0].children[1].children[1].children[0].innerHTML.charAt(
+                    0
+                ) - 1
+            );
+            return counter;
+        }
+        async function changeCounter() {
+            if (counter === thisProject.media.length - 1) {
+                setCounter(0);
+                return 0;
+            } else {
+                setCounter(counter + 1);
+                return counter + 1;
+            }
+        }
+        doStuff();
+        async function doStuff() {
+            const wait = await setThisCounter();
+            const newCounter = await changeCounter();
+            thisCounterDiv.innerHTML = `<h4>
+                ${newCounter + 1}&nbsp;|&nbsp;${thisProject.media.length}
+            </h4>`;
+            thisPhoto.src = thisProject.media[newCounter].src;
+        }
     };
 
     return (
@@ -421,14 +411,18 @@ export default function Welcome() {
                                                 rel="noopener noreferrer"
                                                 key={link.target}
                                                 href={link.target}
-                                                onMouseEnter={(e) =>
-                                                    linkHover(e)
-                                                }
-                                                onMouseLeave={(e) =>
-                                                    linkLeave(e)
-                                                }
                                             >
-                                                <br></br> <h4>{link.txt}</h4>
+                                                <br></br>
+                                                <h4
+                                                    onMouseEnter={(e) =>
+                                                        linkHover(e)
+                                                    }
+                                                    onMouseLeave={(e) =>
+                                                        linkLeave(e)
+                                                    }
+                                                >
+                                                    {link.txt}
+                                                </h4>
                                             </a>
                                         ))}
                                     </div>
@@ -483,10 +477,10 @@ export default function Welcome() {
                                 </h4>
                                 <br></br>
                                 <br></br>
-                                <h4>role: </h4>
-                                <p> {physical.role}</p>
+                                <h4>role:&nbsp;</h4>
+                                <p>{physical.role}</p>
                                 <br></br>
-                                <h4>tech: </h4>
+                                <h4>tech:&nbsp;</h4>
                                 <p>{physical.tech}</p>
                                 <br></br>
                                 <br></br>
@@ -501,14 +495,17 @@ export default function Welcome() {
                                                 rel="noopener noreferrer"
                                                 key={link.target}
                                                 href={link.target}
-                                                onMouseEnter={(e) =>
-                                                    linkHover(e)
-                                                }
-                                                onMouseLeave={(e) =>
-                                                    linkLeave(e)
-                                                }
                                             >
-                                                <h4>{link.txt}</h4>
+                                                <h4
+                                                    onMouseEnter={(e) =>
+                                                        linkHover(e)
+                                                    }
+                                                    onMouseLeave={(e) =>
+                                                        linkLeave(e)
+                                                    }
+                                                >
+                                                    {link.txt}
+                                                </h4>
                                             </a>
                                         ))}
                                     </div>
@@ -530,13 +527,19 @@ export default function Welcome() {
                                     <div
                                         className="left"
                                         onClick={(e) => clickLeft(e)}
-                                        onMouseEnter={(e) => leftHoverEnter(e)}
-                                    ></div>
+                                        onMouseEnter={(e) => linkHover(e)}
+                                        onMouseLeave={(e) => linkLeave(e)}
+                                    >
+                                        ⌃
+                                    </div>
                                     <div
                                         className="right"
                                         onClick={(e) => clickRight(e)}
-                                        onMouseEnter={(e) => rightHoverEnter(e)}
-                                    ></div>
+                                        onMouseEnter={(e) => linkHover(e)}
+                                        onMouseLeave={(e) => linkLeave(e)}
+                                    >
+                                        ⌃
+                                    </div>
                                 </div>
                             )}
                             {physical.media[0].type === "image" && (
@@ -544,7 +547,7 @@ export default function Welcome() {
                                     className="previewImage"
                                     src={physical.media[0].src}
                                     alt={physical.media[0].alt}
-                                />
+                                ></img>
                             )}
                             {physical.media[0].type === "video" && (
                                 <video
@@ -588,10 +591,10 @@ export default function Welcome() {
                                 </h4>
                                 <br></br>
                                 <br></br>
-                                <h4>role: </h4>
+                                <h4>role:&nbsp;</h4>
                                 <p> {physical.role}</p>
                                 <br></br>
-                                <h4>tech: </h4>
+                                <h4>tech:&nbsp;</h4>
                                 <p>{physical.tech}</p>
                                 <br></br>
                                 <br></br>
@@ -606,14 +609,17 @@ export default function Welcome() {
                                                 rel="noopener noreferrer"
                                                 key={link.target}
                                                 href={link.target}
-                                                onMouseEnter={(e) =>
-                                                    linkHover(e)
-                                                }
-                                                onMouseLeave={(e) =>
-                                                    linkLeave(e)
-                                                }
                                             >
-                                                <h4>{link.txt}</h4>
+                                                <h4
+                                                    onMouseEnter={(e) =>
+                                                        linkHover(e)
+                                                    }
+                                                    onMouseLeave={(e) =>
+                                                        linkLeave(e)
+                                                    }
+                                                >
+                                                    {link.txt}
+                                                </h4>
                                             </a>
                                         ))}
                                     </div>
@@ -633,13 +639,19 @@ export default function Welcome() {
                                 <div
                                     className="left"
                                     onClick={(e) => clickLeft(e)}
-                                    onMouseEnter={(e) => leftHoverEnter(e)}
-                                ></div>
+                                    onMouseEnter={(e) => linkHover(e)}
+                                    onMouseLeave={(e) => linkLeave(e)}
+                                >
+                                    ⌃
+                                </div>
                                 <div
                                     className="right"
                                     onClick={(e) => clickRight(e)}
-                                    onMouseEnter={(e) => rightHoverEnter(e)}
-                                ></div>
+                                    onMouseEnter={(e) => linkHover(e)}
+                                    onMouseLeave={(e) => linkLeave(e)}
+                                >
+                                    ⌃
+                                </div>
                             </div>
                             <img
                                 className="previewImage"
@@ -658,27 +670,40 @@ export default function Welcome() {
             >
                 CONTACT
             </div>
-            <div className="description">
-                <div className="descriptionTxt">
-                    <h4>EMAIL: </h4>
+            <div className="contact">
+                <div className="contactTxt">
+                    <h4>EMAIL&nbsp;&nbsp;&nbsp;</h4>
                     <a href="mailto:hi@paulevans.de">
-                        <p>hi@paulevans.de ↗</p>
+                        <p
+                            onMouseEnter={(e) => linkHover(e)}
+                            onMouseLeave={(e) => linkLeave(e)}
+                        >
+                            hi@paulevans.de
+                        </p>
                     </a>
                     <br></br>
-                    <h4>PHONE: </h4>
+                    <h4>PHONE&nbsp;&nbsp;</h4>
                     <p>+4917621313530</p>
                     <br></br>
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://github.com/paulalexanderevans"
+                    >
+                        <h4
+                            onMouseEnter={(e) => linkHover(e)}
+                            onMouseLeave={(e) => linkLeave(e)}
+                        >
+                            GitHub
+                        </h4>
+                    </a>
+                    <br></br>
+                    <h4
                         onMouseEnter={(e) => linkHover(e)}
                         onMouseLeave={(e) => linkLeave(e)}
                     >
-                        <h4>GitHub ↗</h4>
-                    </a>
-                    <br></br>
-                    <h4>INSTAGRAM ↗</h4>
+                        INSTAGRAM
+                    </h4>
                 </div>
             </div>
             {/* <div className="break"></div> */}

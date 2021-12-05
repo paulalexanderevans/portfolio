@@ -9,6 +9,9 @@ export default function Welcome() {
         setLastScroll(0);
         topColor();
         setMenuOpen(false);
+        const body = document.body;
+        const top = "top";
+        body.classList.add(top);
     }, []);
     const [counter, setCounter] = useState(0);
     //menu
@@ -47,15 +50,23 @@ export default function Welcome() {
     };
 
     const linkLeave = (e) => {
+        const body = document.body;
+        const top = "top";
         console.log(e.target.className);
         if (menuOpen && e.target.id === "work") {
             console.log("work");
+        }
+        if (body.classList.contains(top)) {
+            console.log("top");
+            e.target.style.color = "black";
         } else if (e.target.className === "left") {
             e.target.style.color = "white";
+        } else if (e.target.className === "workLinks") {
+            e.target.style.color = "black";
         } else if (e.target.className === "right") {
             e.target.style.color = "white";
         } else {
-            e.target.style.color = "black";
+            e.target.style.color = "white";
         }
     };
 
@@ -98,10 +109,13 @@ export default function Welcome() {
         const body = document.body;
         const scrollUp = "scroll-up";
         const scrollDown = "scroll-down";
+        const top = "top";
         const currentScroll = e.target.scrollTop;
         if (currentScroll <= 0) {
             body.classList.remove(scrollUp);
             console.log("top");
+            body.classList.add(top);
+            console.log("body.classList: ", body.classList);
         }
 
         if (
@@ -246,9 +260,8 @@ export default function Welcome() {
 
     return (
         <div className="container" onScroll={(e) => handleScroll(e)}>
-            {/* <Cursor></Cursor> */}
             <div className="header">
-                <h2
+                <h3
                     id="home"
                     onMouseEnter={(e) => linkHover(e)}
                     onMouseLeave={(e) => linkLeave(e)}
@@ -256,9 +269,9 @@ export default function Welcome() {
                     onClick={(e) => scrollTo(e)}
                 >
                     PAUL EVANS
-                </h2>
+                </h3>
                 <div className="headerLinks">
-                    <h2
+                    <h3
                         id="work"
                         onMouseEnter={(e) => linkHover(e)}
                         onMouseLeave={(e) => linkLeave(e)}
@@ -266,8 +279,8 @@ export default function Welcome() {
                         onClick={() => workClick()}
                     >
                         WORK
-                    </h2>
-                    <h2
+                    </h3>
+                    <h3
                         id="about"
                         onMouseEnter={(e) => linkHover(e)}
                         onMouseLeave={(e) => linkLeave(e)}
@@ -275,8 +288,8 @@ export default function Welcome() {
                         onClick={(e) => scrollTo(e)}
                     >
                         ABOUT
-                    </h2>
-                    <h2
+                    </h3>
+                    <h3
                         className="headerTxt"
                         onClick={(e) => scrollTo(e)}
                         id="contact"
@@ -284,7 +297,7 @@ export default function Welcome() {
                         onMouseLeave={(e) => linkLeave(e)}
                     >
                         CONTACT
-                    </h2>
+                    </h3>
                 </div>
             </div>
             <div className="welcome" ref={home}>
@@ -333,13 +346,13 @@ export default function Welcome() {
                     </div>
                 </div>
                 <div className="down">
-                    <h2>⌃</h2>
+                    <h3>⌃</h3>
                 </div>
             </div>
             <div
                 ref={about}
                 className="work"
-                onMouseEnter={(e) => changeColor(e)}
+                // onMouseEnter={(e) => changeColor(e)}
             >
                 ABOUT
             </div>
@@ -368,7 +381,7 @@ export default function Welcome() {
                 className="work"
                 onMouseEnter={(e) => changeColor(e)}
             >
-                CODE
+                {/* CODE */}
             </div>
             <div className="description">
                 <div className="descriptionTxt">
@@ -452,7 +465,7 @@ export default function Welcome() {
             <div
                 ref={digital}
                 className="work"
-                onMouseEnter={(e) => changeColor(e)}
+                // onMouseEnter={(e) => changeColor(e)}
             >
                 DIGITAL
             </div>
@@ -567,7 +580,7 @@ export default function Welcome() {
             <div
                 ref={physical}
                 className="work"
-                onMouseEnter={(e) => changeColor(e)}
+                // onMouseEnter={(e) => changeColor(e)}
             >
                 PHYSICAL
             </div>

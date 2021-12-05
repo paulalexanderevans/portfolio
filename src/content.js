@@ -683,7 +683,7 @@ export default function Welcome() {
                     </a>
                     <br></br>
                     <h4>PHONE&nbsp;&nbsp;</h4>
-                    <p>+4917621313530</p>
+                    <p>+49&nbsp;176&nbsp;21313530</p>
                     <br></br>
                     <a
                         target="_blank"

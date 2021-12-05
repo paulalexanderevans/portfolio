@@ -379,9 +379,9 @@ export default function Welcome() {
             <div
                 ref={code}
                 className="work"
-                onMouseEnter={(e) => changeColor(e)}
+                // onMouseEnter={(e) => changeColor(e)}
             >
-                {/* CODE */}
+                CODE
             </div>
             <div className="description">
                 <div className="descriptionTxt">

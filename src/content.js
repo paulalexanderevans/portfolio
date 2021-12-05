@@ -356,7 +356,7 @@ export default function Welcome() {
                         <br></br>
                         <br></br>
                         Studied Digital Media Design at University of the Arts,
-                        London topped up with courses in Javascript, Wordpress,
+                        London, topped up with courses in Javascript, Wordpress,
                         SEO and most recently graduated from Spiced Academy’s
                         Full-Stack Web Developer Bootcamp.
                     </h2>

@@ -61,7 +61,7 @@ export default function Welcome() {
             e.target.style.color = "black";
         } else if (e.target.className === "left") {
             e.target.style.color = "white";
-        } else if (e.target.className === "workLinks") {
+        } else if (e.target.className === "headerTxt") {
             e.target.style.color = "black";
         } else if (e.target.className === "right") {
             e.target.style.color = "white";
@@ -679,7 +679,7 @@ export default function Welcome() {
             <div
                 ref={contact}
                 className="work"
-                onMouseEnter={(e) => changeColor(e)}
+                // onMouseEnter={(e) => changeColor(e)}
             >
                 CONTACT
             </div>

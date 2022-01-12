@@ -27,7 +27,9 @@ a:visited {
 }
 
 html {
-    font-size: calc(0.5em + 1.4vw);
+    /* font-size: calc(0.5em + 1.4vw); */
+    font-size: calc(0.7em + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
 }
 
 @font-face {
@@ -100,6 +102,15 @@ p {
     color: white;
 }
 
+
+.home {
+    margin: 0;
+    font-family: "trade-gothic-regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
 .container {
     background-color: #1e1e1e;
     top: 0;
@@ -155,7 +166,7 @@ p {
 }
 
 .scroll-down .header {
-    top: -2em;
+   top: -4em;
 }
 
 .scroll-up .header {
@@ -261,6 +272,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: none;
 }
 
 .left {
@@ -299,6 +311,9 @@ p {
     text-decoration: none;
 }
 
+.counter{
+    display: none;
+}
 /* ---gobstopper */
 
 .gobstopper {
@@ -413,4 +428,45 @@ p {
     padding: 0.5em;
     display: flex;
     justify-content: space-around;
+}
+
+
+@media only screen 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.header{
+    height:auto;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.headerLinks {
+    width: 100%;
+    font-size:2em
+}
+
+.home {
+    margin: 0;
+    font-family: "trade-gothic-bold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.preview {
+    flex-direction: column;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+}
+
+html {
+    /* font-size: calc(0.5em + 1.4vw); */
+    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+}
 }

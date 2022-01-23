@@ -261,7 +261,8 @@ export default function Welcome() {
     return (
         <div className="container" onScroll={(e) => handleScroll(e)}>
             <div className="header">
-                <div className="home"
+                <div
+                    className="home"
                     id="home"
                     onMouseEnter={(e) => linkHover(e)}
                     onMouseLeave={(e) => linkLeave(e)}
@@ -278,7 +279,7 @@ export default function Welcome() {
                         className="headerTxt"
                         onClick={() => workClick()}
                     >
-                        WORK
+                        PORTFOLIO
                     </h3>
                     <h3
                         id="about"

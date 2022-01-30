@@ -313,9 +313,11 @@ export default function Welcome() {
                 />
 
                 <h4 className="year">2012-2021</h4>
-                <div className="welcomeTxtTest">
+                {/* <div className="welcomeTxtTest">
                     FULL-STACK WEB DEVELOPER, DESIGNER & CRAFTSMAN
-                </div>
+                </div> */}
+
+                <div className="welcomeTxtTest">HELLO WORLD</div>
                 <div className="workMenu">
                     <div
                         className="workLinks"

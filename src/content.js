@@ -317,7 +317,9 @@ export default function Welcome() {
                     FULL-STACK WEB DEVELOPER, DESIGNER & CRAFTSMAN
                 </div> */}
 
-                <div className="welcomeTxtTest">HELLO WORLD</div>
+                <div className="welcomeTxtTest">
+                    FULL-STACK WEB DEVELOPER, DESIGNER & CRAFTSMAN
+                </div>
                 <div className="workMenu">
                     <div
                         className="workLinks"
